@@ -1,37 +1,64 @@
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap%22");
+/*GLOBALES*/
 *{
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
 }
 
-.flex{
-  display: flex;
+/*HOME*/
+.home{
+    display: flex;
+    background: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color:#404040;
+    min-height: 500px;
+    font-family: "Lato", sans-serif;
 }
-
-a{
-  color: black;
+.home .max-width{
+    margin: auto ;
 }
-
-.navbar{
-  display: flex;
-  width: 100%;
-  padding: 30px 0;
-  align-items: center;
-  justify-content: space-around;
+.home .home-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
 }
-
-.navbar h2{
-  justify-self: flex-start;
+.home .home-content .text-home{
+    width: 45%;
 }
-
-.navbar .max-width{
-  display: flex;
-  align-items: center;
-
+.home .home-content .burguer{
+    width: 50%;
 }
-
-.nav-ul li{
-  display: inline-block;
-  margin-right: 1em;
+.home .home-content .text-1{
+    font-size: 75px;
+    font-weight: 600;
+}
+.home .home-content .text-2{
+    font-size: 20px;
+    margin: 5px 0;
+}
+.home .home-content a{
+    display: inline-block;
+    background: #ff9f00   ;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 100px;
+    margin-top: 20px;
+    margin-bottom: 62px;
+    border-radius: 60px;
+    border:3px solid #ff9f00 ;
+    transition: all 0.3 ease;
+}
+.home .home-content a:hover{
+    color:#ff9f00 ;
+    border:3px solid #ff9f00 ;
+    background: none;
 }
